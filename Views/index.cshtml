@@ -1,14 +1,23 @@
-<Form action="/" method="post">
-  <select name="player1">
-    <option>Rock</option>
-    <option>Paper</option>
-    <option>Scissors</option>
-  </select>
-</form>
-<!-- <Form action="/" method="post">
-  <select name="player2">
-    <option>Rock</option>
-    <option>Paper</option>
-    <option>Scissors</option>
-  </select>
-</form> -->
+@if(@Model == null)
+{
+  <form action="/" method="post">
+    <select name="player1">
+      <option>Rock</option>
+      <option>Paper</option>
+      <option>Scissors</option>
+    </select>
+    <select name="player2">
+      <option>Rock</option>
+      <option>Paper</option>
+      <option>Scissors</option>
+    </select>
+    <button type="submit">Let's Play!</button>
+  </form>
+}
+else
+{
+  <ul>
+    <li>@Model</li>
+
+  </ul>
+}
