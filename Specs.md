@@ -5,3 +5,4 @@
 | Paper beats rock                          | Rock v. Paper     | Paper wins     |
 | Scissors beats paper                      | Paper v. Scissors | Scissors wins  |
 | Any two of the same is a draw             | Paper v. Paper    | Draw           |
+| All behaviors function together           | 

@@ -18,7 +18,11 @@ namespace RockPaperScissors.Objects
       {
         return "Rock is winner";
       }
-
+      else if (Player1 == "Paper" && Player2 == "Scissors")
+      {
+        return "Scissors is winner";
+      }
+        return "winner";
     }
   }
 }
