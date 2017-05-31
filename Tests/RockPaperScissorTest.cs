@@ -27,5 +27,12 @@ namespace RockPaperScissors
       string winner = instance.Compare("Paper", "Scissors");
       Assert.Equal("Scissors is winner", winner);
     }
+    [Fact]
+    public void BotharetheSame_Draw()
+    {
+      Game instance = new Game();
+      string winner = instance.Compare("Paper", "Paper");
+      Assert.Equal("Draw", winner);
+    }
   }
 }
